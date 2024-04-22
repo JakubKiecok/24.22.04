@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+}
+.cale{
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+nav ul{
+    display: flex;
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+    padding-right: 10%;
+    padding-top: 1%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+    border-radius: 5px;
+    padding-bottom: 28px;
+}
+nav ul li a:hover{
+    border-bottom: hsl(26, 100%, 55%) solid 5px;
+    transition-duration: 0.5s;
+}
+nav .icon{
+    display: flex;
+}
+nav .icon a{
+    padding-right: 10%;
+    padding-top: 20%;
+}
+hr{
+    border: 1px solid hsl(223, 64%, 98%);
+}
+main{
+    padding: 10% 5% 10% 5%;
+    display: flex;
+}
+.lewo{
+    width: 60%;
+    text-align: center;
+}
+.prawo{
+    width: 40%;
+}
+.prawo h3{
+    color: hsl(26, 100%, 55%);
+}
+.prawo h1{
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "YOPQ" 300;
+    font-size: 3rem;
+}
+.prawo .opis{
+    color: hsl(220, 14%, 75%);
+    line-height: 150%;
+}
+.cena{
+    display: flex;
+}
+.cena h2{
+    padding-right: 4%;
+}
+.cena .sale{
+    padding: 1%;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    height: 5%;
+    margin-top: 3.5%;
+    border-radius: 5px;
+}
+.normal{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.shop{
+    display: flex;
+    width: 100%;
+}
+.shop .ilosc{
+    display: flex;
+    margin-right: 5%;
+    width: 45%;
+}
+.shop .ilosc .left{
+    padding-top: 10px;
+    background-color: hsl(223, 64%, 98%);
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.shop .ilosc .left img{
+    padding-top: 9px;
+}
+.shop .ilosc .right{
+    background-color: hsl(223, 64%, 98%);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.shop .ilosc .right img{
+    padding-top: 2px;
+}
+.shop .ilosc #ilosc{
+    padding: 10px 10px 0 10px;
+    background-color: hsl(223, 64%, 98%);
+    font-size: 1rem;
+}
+.shop button{
+    width: 50%;
+    padding: 13px 0 7px 0;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+}
+.shop button .cart svg{
+    color: white;
+}
+.bomba{
+    width: 60%;
+    float: right;
+    padding-right: 25%;
+}
+.lewo .top{
+    width: 100%;
+}
+.lewo .top img{
+    margin-top: -20%;
+    border-radius: 25px;
+    width: 100%;
+}
+.lewo .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.lewo .bottom img{
+    margin-top: 5%;
+    border-radius: 10px;
+    width: 20%;
+}
+.lewo .bottom img:hover{
+    opacity: 0.8;
+}
+#box{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 35%;
+    display: none;
+}
+#box .top{
+    width: 75%;
+}
+#box .top img{
+    width: 60%;
+    border-radius: 25px;
+}
+#box .bottom{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+#box .bottom img{
+    width: 20%;
+    border-radius: 10px;
+}
+#box .close{
+    position: absolute;
+    width: 2%;
+    margin-top: -750px;
+    margin-left: 520px;
+}
+#box .next{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: -50px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 7px 10px 7px 10px;
+}
+#box .previous{
+    position: absolute;
+    margin-left: -35px;
+    margin-top: -50px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 7px 10px 7px 10px;
+}
+#box .bottom img:hover{
+    opacity: 0.8;
+}
+.close:hover{
+    fill: #ff7d1a;
+}
+.menu{
+    display: none;
+}
+.menu2{
+    display: none;
+}
+.next2{
+    display: none;
+}
+.previous2{
+    display: none;
+}
+.box2{
+    display: none;
+}
+@media only screen and (max-width: 375px) {
+    body {
+      width: 375px;
+    }
+    .menu{
+        display: block;
+    }
+    .kys{
+        display: none;
+    }
+    .cale{
+        padding: 0;
+    }
+    nav{
+        padding-left: 25px;
+        width: 90%;
+    }
+    main{
+        flex-direction: column;
+        padding: 0;
+    }
+    .lewo{
+        width: 100%;
+    }
+    .bomba{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .lewo .top{
+        width: 100%;
+    }
+    .lewo .top img{
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    .lewo .bomba .bottom{
+        display: none;
+    }
+    .next2{
+        display: block;
+        position: absolute;
+        margin-left: 340px;
+        margin-top: -200px;
+        border-radius: 100%;
+        background-color: white;
+        padding: 7px 10px 7px 10px;
+    }
+    hr{
+        display: none;
+    }
+    .previous2{
+        display: block;
+        position: absolute;
+        margin-left: 5px;
+        margin-top: -200px;
+        border-radius: 100%;
+        background-color: white;
+        padding: 7px 10px 7px 10px;
+    }
+    .prawo{
+        width: 90%;
+        padding: 5%;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .shop .ilosc{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .shop button{
+        width: 100%;
+    }
+    .cena .sale{
+        margin-top: 6%;
+    }
+    .normal{
+        margin-left: 270px;
+        margin-top: -60px;
+    }
+    .cena{
+        margin-bottom: 10px;
+    }
+    .box2{
+        background-color: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        width: 100%;
+        height: 120%;
+    }
+    .box2 .nav{
+        width: 60%;
+        background-color: white;
+        height: 100%;
+    }
+    .close2{
+        position: absolute;
+        width: 5%;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    .box2 .nav ul{
+        padding-top: 100px;
+        margin: 0;
+    }
+    .box2 .nav ul li{
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
+    .box2 .nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 1.5rem;  
+    }
+  }
